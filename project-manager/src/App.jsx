@@ -1,9 +1,11 @@
 import React from 'react'
+import ProjectCard from './components/ProjectCard'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <ProjectCard/>
+    </>
   )
 }
-
 export default App
