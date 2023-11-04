@@ -1,26 +1,23 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Navbar'
 import Hero from '../components/Hero'
-import ProjectCard from '../components/ProjectCard'
 
 const Home = () => {
   return (
     <>
-      <div className='flex flex-row' >
+      <div className='flex md:flex-row flex-col' >
+      {/* navbar */}
         <Sidebar />
         <div>
           <Hero />
-          {/* project for show */}
-          <div className='flex w-full justify-between items-center' >
-            <h2 className='text-2xl font-semibold pt-5 px-5' >Projects</h2>
-            <button className='w-[200px] text-center bg-blue-500 rounded-lg p-1' >View All</button>
+          {/* little intro */}
+          <div className='px-5 py-7' >
+            <h2 className='text-2xl font-semibold' >Become A Inventor and Build Project</h2>
+            <p className='py-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iure suscipit voluptates magnam deleniti, culpa cum placeat debitis voluptatum explicabo provident illum voluptatibus, obcaecati expedita. Quos eveniet asperiores recusandae voluptate?Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p className='py-1' > Aliquam eum impedit ea praesentium aliquid ad. Voluptatem possimus, error explicabo tempora consectetur eius tempore sapiente quam iusto harum cum incidunt inventore.</p>
+            <button className='bg-yellow-300 rounded-md py-2 px-5 my-2' >View All Projects list</button>
           </div>
-          <div className='flex flex-wrap gap-4 mt-4 justify-evenly m-4'>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-          </div>
+          {/*  */}
         </div>
       </div>
 

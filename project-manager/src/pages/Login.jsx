@@ -39,14 +39,14 @@ function Login() {
                         <>
                             <input
                                 type="text"
-                                placeholder='Please Enter your Enrolment NO.'
+                                placeholder='Please Enter Your User ID'
                                 className='border border-black p-1 w-full rounded-md'
                             />
                             <input
                                 type="email"
                                 name=""
                                 id=""
-                                placeholder='Please enter your Password'
+                                placeholder='Please Enter Your Password'
                                 className='border border-black p-1 w-full rounded-md'
                             />
                         </>

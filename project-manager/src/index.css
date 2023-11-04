@@ -27,3 +27,33 @@
     radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
     radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
 }
+
+/* to stop scrolling while menu is open */
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+/* menu animation  */
+.menu-hidden {
+  opacity: 0;
+  /* Start off-screen to the left */
+  transform: translateX(-100%); 
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-visible {
+  opacity: 1;
+  transform: translateX(0); 
+  /* Slide in from the left */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
